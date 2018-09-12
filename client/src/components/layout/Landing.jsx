@@ -47,7 +47,7 @@ class Landing extends Component {
                     alt="default_avatar"
                   />
                   <h4>A Brief Introduction</h4>
-                  <p className="lead">
+                  <p>
                     My Name is David Mayes. Please browse around my website to
                     view my profile. I am eager to engage in new and exciting
                     projects and if you would like to build something together

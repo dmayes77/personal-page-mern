@@ -77,7 +77,7 @@ class ProfileContact extends Component {
                 />
                 <button
                   type="submit"
-                  className="badge-pill btn btn-info btn-block mt-20 p-1"
+                  className="badge-pill btn btn-info btn-block mt-20 shadow p-1"
                 >
                   Send Message
                   <i className="fas fa-long-arrow-alt-right ml-2" />
