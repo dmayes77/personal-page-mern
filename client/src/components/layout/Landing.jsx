@@ -39,7 +39,7 @@ class Landing extends Component {
         <section className="landing" id="home">
           <div className="dark-overlay landing-inner text-light">
             <div className="container landing-inner">
-              <div className="row mb-5">
+              <div className="row mb-3">
                 <div className="col-md-12 text-center">
                   <img
                     className="mb-4 img-fluid rounded-circle"
