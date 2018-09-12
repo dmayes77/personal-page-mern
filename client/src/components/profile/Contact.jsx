@@ -38,7 +38,7 @@ class ProfileContact extends Component {
         <div className="container">
           <div className="title text-center mx-5">
             <h1 className="mb-10">If you need, Just drop me a line</h1>
-            <p>Hello</p>
+            <p>I look forward to hearing from and working with you!</p>
           </div>
           <form
             onSubmit={e => this.onSubmit(e)}

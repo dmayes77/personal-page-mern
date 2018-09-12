@@ -7,7 +7,7 @@ class ProfileSocial extends Component {
 
 		return (
 			<Fragment>
-				<section id="social"className="p-6 bg-info">
+				<section id="social"className="p-5 bg-info">
 					<div className="text-center">
 						{isEmpty(profile.social && profile.social.github) ? null : (
 							<a
