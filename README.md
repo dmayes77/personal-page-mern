@@ -41,3 +41,4 @@ Make sure you are always working within the front-end or back-end `src` director
   }
   ```
 * If you need to support additional file types, feel free to modify the `webpack.config.js`. You should be able to discern the sections for image handling vs document handling.# personal-page-mern
+# personal-page-mern
