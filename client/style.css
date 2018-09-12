@@ -21,6 +21,11 @@ body {
 	padding-top: 80px;
 }
 
+.bg {
+	/* background-color: #cedfe2 */
+	background-color: #eaf5f7
+}
+
 .dark-overlay {
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
@@ -65,7 +70,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .list-group-item {

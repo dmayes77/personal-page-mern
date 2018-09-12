@@ -6,13 +6,13 @@ let router = Router();
 
 router.post('/', (req, res, next) => {
 	let messageBody = `Name: ${req.body.name}
-										Email: ${req.body.email}
-										Subject: ${req.body.subject}
-										Message: ${req.body.message}`;
+	Email: ${req.body.email}
+	Subject: ${req.body.subject}
+	Message: ${req.body.message}`;
 	sendEmail(
 		config.EMAIL,
 		'no-reply@davidmayes.io',
-		'New Contact Form Submission',
+		`New Contact Form Submission from ${req.body.name}`,
 		messageBody
 	)
 		.then(response => {

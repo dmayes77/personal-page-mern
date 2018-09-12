@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
+import { sendContactEmail } from '../../services/contact';
 
 class ProfileContact extends Component {
   constructor(props) {
@@ -22,16 +23,21 @@ class ProfileContact extends Component {
   onSubmit(e) {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
-    let messageBody = `name: ${name}, email: ${email}, subject: ${subject}, message: ${message}`;
-    console.log(messageBody);
+    sendContactEmail(name, email, subject, message)
+        .then(() => {
+            // redirect to homepage
+            this.props.history.push('/');
+        }).catch((err) => {
+            console.log(err);
+        })
   }
 
   render() {
     return (
-      <section id="contact" className="section-gap bg-light">
+      <section id="contact" className="section-gap bg">
         <div className="container">
           <div className="title text-center mx-5">
-            <h1 className="mb-10">Hello</h1>
+            <h1 className="mb-10">If you need, Just drop me a line</h1>
             <p>Hello</p>
           </div>
           <form

@@ -64,7 +64,7 @@ class ProfileCreds extends Component {
 			</li>
 		));
 		return (
-			<section id="experience" className="service-area section-gap bg-light">
+			<section id="experience" className="service-area section-gap bg">
 				<div className="container">
 					<div className="row mb-5">
 						<div className="col-md-6 mt-2">

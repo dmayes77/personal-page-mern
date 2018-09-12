@@ -6,7 +6,7 @@ import ProfileGithub from "../profile/Github";
 import ProfileContact from "../profile/Contact";
 import ProfileSocial from "../profile/Social";
 import ThankYou from "../profile/ThankYou";
-import axios from "axios";
+import { getByHandle } from '../../services/profile';
 
 class Landing extends Component {
   constructor(props) {
@@ -21,20 +21,19 @@ class Landing extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/profile/handle/dmayes`).then(profile =>
+    getByHandle('dmayes').then(profile =>
       this.setState({
-        profile: profile.data,
-        user: profile.data.user,
-        skills: profile.data.skills,
-        experience: profile.data.experience,
-        education: profile.data.education
+        profile,
+        user: profile.user,
+        skills: profile.skills,
+        experience: profile.experience,
+        education: profile.education
       })
     );
   }
 
   render() {
     const { profile, user, skills, experience, education } = this.state;
-
     return (
       <Fragment>
         <section className="landing" id="home">
