@@ -32,8 +32,8 @@ class ProfileAbout extends Component {
 									)}
 								</p>
 								<hr />
-								<div className="row">
-									<div className="col-md-6 mt-2">
+								<div className="container">
+									<div className="mt-5">
 										<h3 className="text-center text-info">Skill Set</h3>
 										<div className="row">
 											<div className="d-flex flex-wrap justify-content-center align-items-center px-3">
@@ -41,7 +41,7 @@ class ProfileAbout extends Component {
 											</div>
 										</div>
 									</div>
-									<div className="col-md-6 mt-2">
+									{/* <div className="col-md-6 mt-2">
 										<section className="skills-section section">
 											<h2 className="text-center text-info">
 												<i className="fa fa-rocket mr-2" />
@@ -53,9 +53,7 @@ class ProfileAbout extends Component {
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="80%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 
 												<div className="item py-1">
 													<div className="level-title">
@@ -64,36 +62,28 @@ class ProfileAbout extends Component {
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="95%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 
 												<div className="item py-1">
 													<div className="level-title">MongoDB</div>
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="88%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 
 												<div className="item py-1">
 													<div className="level-title">HTML5 &amp; CSS</div>
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="95%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 
 												<div className="item py-1">
 													<div className="level-title">NodeJS</div>
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="92%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 
 												<div className="item py-1">
 													<div className="level-title">
@@ -102,12 +92,10 @@ class ProfileAbout extends Component {
 													<div className="level-bar">
 														<div className="level-bar-inner" data-level="60%" />
 													</div>
-													{/* <!--//level-bar-->                                  */}
 												</div>
-												{/* <!--//item--> */}
 											</div>
 										</section>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
-import { sendContactEmail } from '../../services/contact';
+import { sendContactEmail } from "../../services/contact";
 
 class ProfileContact extends Component {
   constructor(props) {
@@ -11,6 +11,15 @@ class ProfileContact extends Component {
       email: "",
       subject: "",
       message: ""
+    };
+
+    this.clearForm = () => {
+      this.setState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
     };
 
     this.onChange = this.onChange.bind(this);
@@ -24,12 +33,13 @@ class ProfileContact extends Component {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
     sendContactEmail(name, email, subject, message)
-        .then(() => {
-            // redirect to homepage
-            this.props.history.push('/');
-        }).catch((err) => {
-            console.log(err);
-        })
+      .then(() => {
+        // redirect to homepage
+        this.props.history.push("/");
+      }).then(this.clearForm())
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   render() {
@@ -78,6 +88,7 @@ class ProfileContact extends Component {
                 <button
                   type="submit"
                   className="badge-pill btn btn-info btn-block mt-20 shadow p-1"
+                  href="#home"
                 >
                   Send Message
                   <i className="fas fa-long-arrow-alt-right ml-2" />
