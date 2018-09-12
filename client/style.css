@@ -101,3 +101,7 @@ body {
 .form-group {
 	margin-bottom: 27px;
 }
+
+.p-6 {
+  padding: 50px 0;
+}
