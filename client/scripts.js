@@ -1,4 +1,16 @@
 jQuery(document).ready(function($) {
+	$('#btnSubmit').click(() => {
+		$('#sentAlert').show('fade');
+
+		setTimeout(() => {
+			$('#sentAlert').hide('fade');
+		}, 3000);
+	});
+
+	$('#alertClose').click(() => {
+		$('#sentAlert').hide('fade');
+	});
+
 	/*======= Skillset *=======*/
 
 	$('.level-bar-inner').css('width', '0');

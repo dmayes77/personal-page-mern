@@ -33,10 +33,7 @@ class ProfileContact extends Component {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
     sendContactEmail(name, email, subject, message)
-      .then(() => {
-        // redirect to homepage
-        this.props.history.push("/");
-      }).then(this.clearForm())
+      .then(this.clearForm())
       .catch(err => {
         console.log(err);
       });
@@ -86,6 +83,7 @@ class ProfileContact extends Component {
                   rows="6"
                 />
                 <button
+                  id="btnSubmit"
                   type="submit"
                   className="badge-pill btn btn-info btn-block mt-20 shadow p-1"
                   href="#home"
@@ -93,6 +91,13 @@ class ProfileContact extends Component {
                   Send Message
                   <i className="fas fa-long-arrow-alt-right ml-2" />
                 </button>
+                <br />
+                <div id="sentAlert" className="alert alert-success collapse">
+                  <a id="alertClose" href="#" className="close">
+                    &times;
+                  </a>
+                  Your message has been successfully sent!
+                </div>
               </div>
             </div>
           </form>
