@@ -5,7 +5,6 @@ import ProfileCreds from "../profile/Creds";
 import ProfileGithub from "../profile/Github";
 import ProfileContact from "../profile/Contact";
 import ProfileSocial from "../profile/Social";
-import ThankYou from "../profile/ThankYou";
 import { getByHandle } from "../../services/profile";
 
 class Landing extends Component {
@@ -34,6 +33,7 @@ class Landing extends Component {
 
   render() {
     const { profile, user, skills, experience, education } = this.state;
+    console.log(profile)
     return (
       <Fragment>
         <section className="landing" id="home">
@@ -48,8 +48,8 @@ class Landing extends Component {
                   />
                   <h1 className="text-white">
                     Hi, I’m <br />
-                    <span>David Mayes</span> <br />
-                    Web Developer
+                    <span>{user.name}</span> <br />
+                    {profile.status}
                   </h1>
                   <p>
                     I am eager to engage in new and exciting projects. If you

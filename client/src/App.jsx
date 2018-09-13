@@ -12,7 +12,6 @@ import Login from './components/admin/Login';
 // import EditProfile from './components/dashboardActions/EditProfile';
 // import AddExperience from './components/dashboardActions/AddExperience';
 // import AddEducation from './components/dashboardActions/AddEducation';
-import Profile from './components/profile/Profile';
 
 // // Check for token
 // if (localStorage.jwtToken) {
