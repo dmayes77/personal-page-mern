@@ -6,7 +6,7 @@ import ProfileGithub from "../profile/Github";
 import ProfileContact from "../profile/Contact";
 import ProfileSocial from "../profile/Social";
 import ThankYou from "../profile/ThankYou";
-import { getByHandle } from '../../services/profile';
+import { getByHandle } from "../../services/profile";
 
 class Landing extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Landing extends Component {
   }
 
   componentDidMount() {
-    getByHandle('dmayes').then(profile =>
+    getByHandle("dmayes").then(profile =>
       this.setState({
         profile,
         user: profile.user,
@@ -46,12 +46,14 @@ class Landing extends Component {
                     src={user.avatar}
                     alt="default_avatar"
                   />
-                  <h4>A Brief Introduction</h4>
+                  <h1 className="text-white">
+                    Hi, I’m <br />
+                    <span>David Mayes</span> <br />
+                    Web Developer
+                  </h1>
                   <p>
-                    My Name is David Mayes. Please browse around my website to
-                    view my profile. I am eager to engage in new and exciting
-                    projects and if you would like to build something together
-                    please get in touch.
+                    I am eager to engage in new and exciting projects. If you
+                    would like to build something together please get in touch.
                   </p>
                 </div>
               </div>

@@ -96,7 +96,7 @@ class Navbar extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="#experience">
                   {/* <i class="fas fa-briefcase mr-2" /> */}
-                  Experience
+                  Education
                 </a>
               </li>
               <li className="nav-item">

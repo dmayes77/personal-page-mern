@@ -72,7 +72,7 @@ body {
 }
 
 .landing-inner {
-	padding-top: 80px;
+	padding-top: 60px;
 }
 
 .bg {
@@ -2165,12 +2165,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
-  .banner-left {
+  .landing {
     text-align: center;
   }
 }
 
-.banner-left h1 {
+.landing h1 {
   color: #000;
   font-size: 36px;
   font-weight: 100;
@@ -2178,7 +2178,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
-.banner-left h1 span {
+.landing h1 span {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -2262,6 +2262,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   display: inline-block;
 }
+
+/* .myself-wrap img {
+  width: 100%;
+} */
 
 .myself-wrap .desc {
   padding: 35px;
