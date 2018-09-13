@@ -33,7 +33,6 @@ class Landing extends Component {
 
   render() {
     const { profile, user, skills, experience, education } = this.state;
-    console.log(profile)
     return (
       <Fragment>
         <section className="landing" id="home">
