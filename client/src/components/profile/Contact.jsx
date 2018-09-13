@@ -73,7 +73,14 @@ class ProfileContact extends Component {
                   value={this.state.subject}
                   onChange={this.onChange}
                 />
+              <div
+                id="sentAlert"
+                className="alert alert-success text-center collapse"
+              >
+                Your message has been successfully sent!
               </div>
+              </div>
+              
               <div className="col-md-6">
                 <TextAreaFieldGroup
                   placeholder="Message"
@@ -91,13 +98,6 @@ class ProfileContact extends Component {
                   Send Message
                   <i className="fas fa-long-arrow-alt-right ml-2" />
                 </button>
-                <br />
-                <div id="sentAlert" className="alert alert-success collapse">
-                  <a id="alertClose" href="#" className="close">
-                    &times;
-                  </a>
-                  Your message has been successfully sent!
-                </div>
               </div>
             </div>
           </form>
