@@ -42,6 +42,14 @@ class ProfileContact extends Component {
   render() {
     return (
       <section id="contact" className="section-gap bg">
+          <blockquote className="blockquote text-center mb-5">
+            <p className="mb-0">
+            "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."
+            </p>
+            <footer className="blockquote-footer">
+            Patrick McKenzie <cite title="Source Title">Engineer / Blogger on Software Marketing</cite>
+            </footer>
+          </blockquote>
         <div className="container">
           <div className="title text-center mx-5">
             <h1 className="mb-10">If you need, Just drop me a line</h1>
@@ -73,14 +81,14 @@ class ProfileContact extends Component {
                   value={this.state.subject}
                   onChange={this.onChange}
                 />
-              <div
-                id="sentAlert"
-                className="alert alert-success text-center collapse"
-              >
-                Your message has been successfully sent!
+                <div
+                  id="sentAlert"
+                  className="alert alert-success text-center collapse"
+                >
+                  Your message has been successfully sent!
+                </div>
               </div>
-              </div>
-              
+
               <div className="col-md-6">
                 <TextAreaFieldGroup
                   placeholder="Message"

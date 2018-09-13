@@ -39,7 +39,7 @@ class ProfileCreds extends Component {
     ));
 
     const eduItems = education.map(edu => (
-      <li key={edu._id} className="p-3 mb-2">
+      <li key={edu._id} className="p-3 mb-2 text-center">
         <h4>{edu.school}</h4>
         <p>
           <Moment format="YYYY/MM/DD">{edu.from}</Moment> -
@@ -49,12 +49,7 @@ class ProfileCreds extends Component {
             <Moment format="YYYY/MM/DD">{edu.to}</Moment>
           )}
         </p>
-        <p>
-          <strong>Degree:</strong> {edu.degree}
-        </p>
-        <p>
-          <strong>Field Of Study:</strong> {edu.fieldofstudy}
-        </p>
+        <p>{edu.fieldofstudy}</p>
         <p>
           {edu.description === "" ? null : (
             <span>
@@ -68,8 +63,7 @@ class ProfileCreds extends Component {
     return (
       <section id="experience" className="service-area section-gap bg">
         <div className="container">
-          <div className="row mb-5">
-
+          <div className="row mb-3">
             <div className="col-md-6 mt-2">
               <h3 className="text-center text-info">My Education</h3>
               {eduItems.length > 0 ? (
@@ -80,11 +74,8 @@ class ProfileCreds extends Component {
             </div>
 
             <div className="col-md-6 mt-2">
-              <h3 className="text-center text-info"> Downtown Chattanooga, TN</h3>
-
-              <img class="img-fluid rounded my-3" src={myImg} alt="" />
+              <img className="img-fluid rounded mb-3" src={myImg} alt="" />
             </div>
-
           </div>
           {/* <div className=" text-center">
 						<a className="btn btn-info badge-pill shadow p-3" href={resume}>
@@ -92,6 +83,7 @@ class ProfileCreds extends Component {
 							Download Resume/CV
 						</a>
 					</div> */}
+          
         </div>
       </section>
     );

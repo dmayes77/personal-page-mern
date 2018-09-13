@@ -4,7 +4,6 @@ import isEmpty from "../../validation/is-empty";
 class ProfileSocial extends Component {
   render() {
     const { profile } = this.props;
-    console.log(profile.social);
 
     return (
       <Fragment>

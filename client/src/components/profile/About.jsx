@@ -20,11 +20,12 @@ class ProfileAbout extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-md-12">
-							<div className="mb-3 p-3">
-								<h3 className="text-center text-info">
+							<div className="mb-3 p-3 text-center">
+								<h3 className="text-info mb-0">
 									{user.name} Professional Statement
 								</h3>
-								<p className="text-center my-4">
+								<p>Current Location: {profile.location}</p>
+								<p className="my-4">
 									{isEmpty(profile.bio) ? (
 										<span>{user.name} does not have a bio</span>
 									) : (
@@ -33,7 +34,7 @@ class ProfileAbout extends Component {
 								</p>
 								<hr />
 								<div className="container">
-									<div className="mt-5">
+									<div className="my-5">
 										<h3 className="text-center text-info">Skill Set</h3>
 										<div className="row">
 											<div className="d-flex flex-wrap justify-content-center align-items-center px-3">
@@ -100,6 +101,14 @@ class ProfileAbout extends Component {
 							</div>
 						</div>
 					</div>
+					<blockquote className="blockquote text-center">
+            <p className="mb-0">
+						Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
+            </p>
+            <footer className="blockquote-footer">
+              Steve Jobs <cite title="Source Title">Programming Visionary</cite>
+            </footer>
+          </blockquote>
 				</div>
 			</section>
 		);

@@ -3,8 +3,6 @@ import 'isomorphic-fetch';
 const AUTH_TOKEN_KEY = 'authtoken';
 let authToken = '';
 
-console.log(authToken);
-
 function setAuthToken(token) {
     authToken = `Bearer ${token}`;
     if (localStorage) {
