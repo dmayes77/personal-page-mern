@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Moment from "react-moment";
-import resume from "../../doc/DavidMayesResume-TN.pdf";
+import resume from "../../doc/David-Mayes-Resume-FSWD.pdf";
 import myImg from "../../img/david.jpg";
 
 class ProfileCreds extends Component {
@@ -77,12 +77,12 @@ class ProfileCreds extends Component {
               <img className="img-fluid rounded mb-3" src={myImg} alt="" />
             </div>
           </div>
-          {/* <div className=" text-center">
-						<a className="btn btn-info badge-pill shadow p-3" href={resume}>
+          <div className=" text-center">
+						<a className="btn btn-info badge-pill shadow p-3" href={resume} download="David_Mayes_Resume">
 							<i className="fas fa-file-download mr-2" />
 							Download Resume/CV
 						</a>
-					</div> */}
+					</div>
           
         </div>
       </section>
