@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Moment from "react-moment";
-import resume from "../../doc/David-Mayes-Resume-FSWD.pdf";
+import resume from "../../doc/David-Mayes-Resume-FSWD1.pdf";
 import myImg from "../../img/david.jpg";
 
 class ProfileCreds extends Component {
